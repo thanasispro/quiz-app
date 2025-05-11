@@ -25,7 +25,7 @@ const categoryColors = {
   <!-- Skip to content link for keyboard users -->
   <a href="#category-selection" class="sr-only focus:not-sr-only focus:absolute focus:p-2 focus:bg-purple-500 focus:text-white focus:z-50">Skip to categories</a>
   
-  <main class="flex flex-col lg:flex-row pt-8 md:pt-0 gap-10 md:gap-16 w-full">
+  <div class="flex flex-col lg:flex-row pt-8 md:pt-0 gap-10 md:gap-16 w-full">
     <!-- Title Section -->
     <header class="flex flex-col gap-4 w-full lg:w-1/2 lg:justify-start lg:items-start">
       <div class="flex flex-col gap-2 text-blue-900 dark:text-white">
@@ -75,7 +75,7 @@ const categoryColors = {
         </ul>
       </nav>
     </section>
-  </main>
+  </div>
 </template>
 
 <style scoped></style>

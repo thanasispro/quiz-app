@@ -13,7 +13,7 @@
     :disabled="disabled"
     :aria-pressed="isSelected"
     :aria-disabled="disabled"
-    :aria-describedby="isCorrect ? 'correct-answer' : (isIncorrect ? 'incorrect-answer' : undefined)"
+    :aria-describedby="isCorrect ? `correct-answer-${_uid}` : (isIncorrect ? `incorrect-answer-${_uid}` : undefined)"
     role="button"
     :tabindex="disabled ? '-1' : '0'"
     @keyup.enter="$emit('click')"
@@ -34,16 +34,17 @@
     <span class="flex-1 text-left text-preset-4 text-blue-900 dark:text-white">{{ text }}</span>
     
     <!-- Correct/Incorrect icons -->
-    <div v-if="isCorrect" class="w-6 h-6">
+    <div v-if="isCorrect" class="w-8 h-8 md:w-10 md:h-10">
       <img src="/assets/images/icon-correct.svg" alt="Correct" />
     </div>
-    <div v-if="isIncorrect" class="w-6 h-6">
+    <div v-if="isIncorrect" class="w-8 h-8 md:w-10 md:h-10">
       <img src="/assets/images/icon-incorrect.svg" alt="Incorrect" />
     </div>
+
+    <!-- Screen reader text - moved inside the button -->
+    <span v-if="isCorrect" :id="`correct-answer-${_uid}`" class="sr-only">This is the correct answer</span>
+    <span v-if="isIncorrect" :id="`incorrect-answer-${_uid}`" class="sr-only">This is an incorrect answer</span>
   </button>
-  
-  <span id="correct-answer" class="sr-only">This is the correct answer</span>
-  <span id="incorrect-answer" class="sr-only">This is an incorrect answer</span>
 </template>
 
 <script>

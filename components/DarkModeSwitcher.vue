@@ -10,7 +10,7 @@
       @click="themeStore.toggleTheme"
       class="relative w-[33px] h-5 md:w-12 md:h-7 rounded-full p-1 transition-colors duration-300 bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-300"
       :aria-label="themeStore.isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'"
-      :aria-pressed="themeStore.isDarkMode"
+      :aria-checked="themeStore.isDarkMode"
       role="switch"
     >
       <div 

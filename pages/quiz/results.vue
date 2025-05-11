@@ -1,5 +1,5 @@
 <template>
-  <main class="results-container flex flex-col lg:flex-row gap-10 md:gap-16 lg:gap-32 w-full" aria-labelledby="results-heading">
+  <div class="results-container flex flex-col lg:flex-row gap-10 md:gap-16 lg:gap-32 w-full" aria-labelledby="results-heading">
     <!-- Left Section: Header with Quiz completion message -->
     <header class="flex flex-col gap-2 text-blue-900 dark:text-white w-full lg:w-1/2">
       <h1 id="results-heading" class="text-preset-2-light">Quiz Completed</h1>
@@ -29,7 +29,7 @@
         />
       </div>
     </section>
-  </main>
+  </div>
 </template>
 
 <script setup>

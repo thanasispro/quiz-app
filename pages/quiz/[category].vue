@@ -1,5 +1,5 @@
 <template>
-  <main class="quiz-container p-4 md:p-0 w-full">
+  <div class="quiz-container p-4 md:p-0 w-full">
     <!-- Skip to content link for keyboard users -->
     <a href="#answer-options" class="sr-only focus:not-sr-only focus:absolute focus:p-2 focus:bg-purple-500 focus:text-white focus:z-50">Skip to answer options</a>
     
@@ -88,7 +88,7 @@
       </section>
       
     </section>
-  </main>
+  </div>
 </template>
 
 <script setup>
