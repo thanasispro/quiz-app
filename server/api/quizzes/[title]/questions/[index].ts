@@ -1,6 +1,5 @@
-import { readFileSync } from 'fs';
-import { resolve } from 'path';
 import { defineEventHandler, createError } from 'h3';
+import data from '../../../../data';
 
 interface Question {
   question: string;
@@ -40,10 +39,7 @@ export default defineEventHandler(async (event) => {
     
     const questionIndex = parseInt(index);
     
-    // Read the data file
-    const dataPath = resolve('./server/data/data.json');
-    const fileContents = readFileSync(dataPath, 'utf8');
-    const data = JSON.parse(fileContents) as DataStructure;
+    // Use the imported data directly
     
     // Find the quiz with the matching title (case-insensitive)
     const quiz = data.quizzes.find(q => 

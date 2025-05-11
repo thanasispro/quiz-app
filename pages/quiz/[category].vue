@@ -39,7 +39,7 @@
                role="region" 
                aria-labelledby="options-heading">
         <h3 id="options-heading" class="sr-only">Answer options</h3>
-        <div role="radiogroup" aria-labelledby="options-heading">
+        <div role="radiogroup" aria-labelledby="options-heading" class="flex flex-col gap-3 md:gap-6 lg:gap-4">
           <Button 
             v-for="(option, index) in currentQuestion.options" 
             :key="index" 

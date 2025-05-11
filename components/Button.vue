@@ -42,7 +42,6 @@
     </div>
   </button>
   
-  <!-- ARIA descriptions for screen readers -->
   <span id="correct-answer" class="sr-only">This is the correct answer</span>
   <span id="incorrect-answer" class="sr-only">This is an incorrect answer</span>
 </template>
