@@ -1,75 +1,156 @@
-# Nuxt Minimal Starter
+# Frontend Quiz Application
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![Quiz App Screenshot](https://raw.githubusercontent.com/thanasispro/quiz-app/main/assets/images/favicon-32x32.png) 
 
-## Setup
+A modern, accessible quiz application built with Nuxt 3 that tests your knowledge on frontend development topics including HTML, CSS, JavaScript, and Accessibility.
 
-Make sure to install dependencies:
+## 🔗 Live Demo
+
+Check out the live application: [Frontend Quiz App](https://quiz-app-git-main-thanasis-protopapas-projects.vercel.app/)
+
+## ✨ Features
+
+- **Multiple Quiz Categories**: HTML, CSS, JavaScript, and Accessibility
+- **Interactive Quiz Interface**: Answer questions and receive immediate feedback
+- **Score Tracking**: Track your performance across quizzes
+- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop devices
+- **Dark/Light Mode**: Toggle between theme preferences
+- **Full Accessibility Support**: WCAG compliant with proper keyboard navigation, ARIA attributes, and screen reader support
+- **Server API**: Backend API for serving quiz questions and checking answers
+- **State Management**: Using Pinia for robust state management
+
+## 🛠️ Technologies Used
+
+- **Nuxt 3** - Vue.js framework for server-side rendering and static site generation
+- **Vue 3** - Progressive JavaScript framework with Composition API
+- **TypeScript** - For type safety and improved developer experience
+- **Tailwind CSS** - Utility-first CSS framework for custom, responsive design
+- **Pinia** - State management solution for Vue 3
+- **Vercel** - For deployment and hosting
+
+## 📋 Prerequisites
+
+- Node.js (v18 or later recommended)
+- Git
+
+## 🚀 Getting Started
+
+### Clone the Repository
 
 ```bash
-# npm
+git clone https://github.com/thanasispro/quiz-app.git
+cd quiz-app
+```
+
+### Install Dependencies
+
+```bash
+# Using npm
 npm install
 
-# pnpm
+# Using pnpm
 pnpm install
 
-# yarn
+# Using yarn
 yarn install
 
-# bun
+# Using bun
 bun install
 ```
 
-## Development Server
+### Run Development Server
 
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
+# Using npm
 npm run dev
 
-# pnpm
+# Using pnpm
 pnpm dev
 
-# yarn
+# Using yarn
 yarn dev
 
-# bun
+# Using bun
 bun run dev
 ```
 
-## Production
-
-Build the application for production:
+### Build for Production
 
 ```bash
-# npm
+# Using npm
 npm run build
 
-# pnpm
+# Using pnpm
 pnpm build
 
-# yarn
+# Using yarn
 yarn build
 
-# bun
+# Using bun
 bun run build
 ```
 
-Locally preview production build:
+### Preview Production Build
 
 ```bash
-# npm
+# Using npm
 npm run preview
 
-# pnpm
+# Using pnpm
 pnpm preview
 
-# yarn
+# Using yarn
 yarn preview
 
-# bun
+# Using bun
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 🧩 Project Structure
+
+- `assets/` - Static assets including images and fonts
+- `components/` - Reusable Vue components
+- `composables/` - Shared composition functions
+- `layouts/` - Page layouts
+- `pages/` - Application pages and routes
+- `server/` - Server API routes and data
+- `store/` - Pinia state management stores
+- `types/` - TypeScript type definitions
+
+## 🖥️ Application Screenshots
+
+<!-- Add application screenshots here when available -->
+
+## 🧪 Testing
+
+The application includes both unit and end-to-end tests to ensure functionality.
+
+```bash
+# Run tests
+npm run test
+```
+
+## 🔒 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Thanasis Protopapas**
+
+- GitHub: [@thanasispro](https://github.com/thanasispro)
+- Portfolio: [Add your portfolio link here]
+- LinkedIn: [Add your LinkedIn profile link here]
+
+## 🙏 Acknowledgments
+
+- [Nuxt.js](https://nuxt.com/) - For the amazing framework
+- [Tailwind CSS](https://tailwindcss.com/) - For the utility-first CSS framework
+- [Vue.js](https://vuejs.org/) - For the progressive JavaScript framework
+- [Vercel](https://vercel.com/) - For hosting and deployment
+
+---
+
+Made with ❤️ by Thanasis Protopapas
