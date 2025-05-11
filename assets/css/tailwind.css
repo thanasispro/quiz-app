@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   @font-face {
+    font-family: 'Rubik';
+    src: url('~/assets/fonts/Rubik-VariableFont_wght.ttf') format('truetype'),
+         url('~/assets/fonts/static/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Rubik';
+    src: url('~/assets/fonts/static/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Rubik';
+    src: url('~/assets/fonts/static/Rubik-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+    font-display: swap;
+  }
+  
+ @font-face {
+    font-family: 'Rubik';
+    src: url('~/assets/fonts/static/Rubik-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Rubik';
+    src: url('~/assets/fonts/static/Rubik-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  body {
+    height: 100vh;
+    @apply bg-grey-50 transition-colors duration-300;
+    background-image: url('/assets/images/pattern-background-mobile-light.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+  }
+
+  .dark body {
+    @apply bg-blue-900;
+    background-image: url('/assets/images/pattern-background-mobile-dark.svg');
+  }
+  
+  /* Tablet background */
+  @media (min-width: 768px) {
+    body {
+      background-image: url('/assets/images/pattern-background-tablet-light.svg');
+    }
+    
+    .dark body {
+      background-image: url('/assets/images/pattern-background-tablet-dark.svg');
+    }
+  }
+  
+  /* Desktop background */
+  @media (min-width: 1024px) {
+    body {
+      background-image: url('/assets/images/pattern-background-desktop-light.svg');
+    }
+    
+    .dark body {
+      background-image: url('/assets/images/pattern-background-desktop-dark.svg');
+    }
+  }
+}
+
+@layer components {
+  .text-preset-1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 88px; /* Mobile size by default */
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+  
+  /* Desktop version (applied at medium breakpoint and above) */
+  @media (min-width: 768px) {
+    .text-preset-1 {
+      font-size: 144px;
+    }
+  }
+  
+  .text-preset-2-medium {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 40px; /* Mobile size by default */
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+  
+  /* Desktop version (applied at medium breakpoint and above) */
+  @media (min-width: 768px) {
+    .text-preset-2-medium {
+      font-size: 64px;
+    }
+  }
+  
+  .text-preset-2-light {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300; /* Light */
+    font-size: 40px; /* Mobile size by default */
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+  
+  /* Desktop version (applied at medium breakpoint and above) */
+  @media (min-width: 768px) {
+    .text-preset-2-light {
+      font-size: 64px;
+    }
+  }
+  
+  /* Text Preset 3 */
+  .text-preset-3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 20px; /* Mobile size by default */
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .text-preset-3 {
+      font-size: 36px;
+    }
+  }
+  
+  /* Text Preset 4 */
+  .text-preset-4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 18px; /* Mobile size by default */
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .text-preset-4 {
+      font-size: 28px;
+    }
+  }
+  
+  /* Text Preset 5 - Medium variant */
+  .text-preset-5-medium {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 14px; /* Mobile size by default */
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .text-preset-5-medium {
+      font-size: 24px;
+    }
+  }
+  
+  /* Text Preset 5 - Regular variant */
+  .text-preset-5-regular {
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal; /* Regular */
+    font-size: 14px; /* Mobile size by default */
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .text-preset-5-regular {
+      font-size: 24px;
+    }
+  }
+  
+  /* Text Preset 5 - Mobile (Italic) */
+  .text-preset-5-italic {
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+  
+  /* Text Preset 6 */
+  .text-preset-6 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+}
