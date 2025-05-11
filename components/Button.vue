@@ -25,9 +25,9 @@
     <div v-else-if="letter" class="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-preset-4 text-grey-500 rounded-[12px]" 
       :class="{
         'bg-gray-50': !isCorrect && !isIncorrect && !isSelected,
-        'bg-green-500 text-white': isCorrect,
-        'bg-red-500 text-white': isIncorrect,
-        'bg-purple-600 text-white': isSelected && !isCorrect && !isIncorrect
+        'bg-green-500 text-white dark:text-blue-850': isCorrect,
+        'bg-red-500 text-white dark:text-blue-850': isIncorrect,
+        'bg-purple-600 text-white dark:text-blue-850': isSelected && !isCorrect && !isIncorrect
       }">
       {{ letter }}
     </div>
