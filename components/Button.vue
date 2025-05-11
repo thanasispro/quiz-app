@@ -6,7 +6,8 @@
         'border-green-500': isCorrect,
         'border-red-500': isIncorrect,
         'border-purple-600': isSelected && !isCorrect && !isIncorrect,
-        'border-transparent': !isSelected && !isCorrect && !isIncorrect
+        'border-transparent hover:border-purple-600': !isSelected && !isCorrect && !isIncorrect && !disabled,
+        'border-transparent': !isSelected && !isCorrect && !isIncorrect && disabled
       }
     ]"
     @click="$emit('click')"
@@ -19,12 +20,14 @@
     @keyup.enter="$emit('click')"
     @keyup.space="$emit('click')"
   >
-    <div v-if="icon" class="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center p-2 rounded-[12px] text-blue-900 dark:text-white" :style="{ backgroundColor: iconBackgroundColor }">
+    <div v-if="icon" class="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center p-2 rounded-[12px] text-blue-900 dark:text-white transition-colors" 
+      :style="{ backgroundColor: iconBackgroundColor }">
       <img :src="icon" :alt="`${text} icon`" class="max-w-full max-h-full" />
     </div>
-    <div v-else-if="letter" class="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-preset-4 text-grey-500 rounded-[12px]" 
+    <div v-else-if="letter" class="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-preset-4 text-grey-500 rounded-[12px] transition-colors" 
       :class="{
-        'bg-gray-50': !isCorrect && !isIncorrect && !isSelected,
+        'bg-gray-50 hover:bg-purple-600 hover:text-white dark:hover:text-blue-850': !isCorrect && !isIncorrect && !isSelected && !disabled,
+        'bg-gray-50': !isCorrect && !isIncorrect && !isSelected && disabled,
         'bg-green-500 text-white dark:text-blue-850': isCorrect,
         'bg-red-500 text-white dark:text-blue-850': isIncorrect,
         'bg-purple-600 text-white dark:text-blue-850': isSelected && !isCorrect && !isIncorrect

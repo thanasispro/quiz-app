@@ -123,15 +123,6 @@ bun run preview
 
 <!-- Add application screenshots here when available -->
 
-## 🧪 Testing
-
-The application includes both unit and end-to-end tests to ensure functionality.
-
-```bash
-# Run tests
-npm run test
-```
-
 ## 🔒 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
