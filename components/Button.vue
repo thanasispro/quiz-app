@@ -35,10 +35,10 @@
     
     <!-- Correct/Incorrect icons -->
     <div v-if="isCorrect" class="w-6 h-6">
-      <img src="~/assets/images/icon-correct.svg" alt="Correct" />
+      <img src="/assets/images/icon-correct.svg" alt="Correct" />
     </div>
     <div v-if="isIncorrect" class="w-6 h-6">
-      <img src="~/assets/images/icon-incorrect.svg" alt="Incorrect" />
+      <img src="/assets/images/icon-incorrect.svg" alt="Incorrect" />
     </div>
   </button>
   

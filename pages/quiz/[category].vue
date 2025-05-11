@@ -73,10 +73,10 @@
 
         <!-- Error message if nothing selected -->
         <div v-if="!showFeedback && showSelectionError" 
-             class="flex items-center justify-center gap-2 text-red-500 text-preset-5 my-2"
+             class="flex items-center justify-center gap-2 text-red-500 dark:text-white text-preset-5 my-2"
              role="alert"
              aria-live="assertive">
-          <img src="~/assets/images/icon-error.svg" alt="Error" class="w-5 h-5" />
+          <img src="/assets/images/icon-error.svg" alt="Error" class="w-5 h-5" />
           <span>Please select an answer</span>
         </div>
       </section>

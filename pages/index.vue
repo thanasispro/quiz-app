@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import Button from '~/components/Button.vue';
 import { useRouter } from 'vue-router';
-import htmlIcon from '~/assets/images/icon-html.svg';
-import cssIcon from '~/assets/images/icon-css.svg';
-import jsIcon from '~/assets/images/icon-js.svg';
-import accessibilityIcon from '~/assets/images/icon-accessibility.svg';
+import htmlIcon from '/assets/images/icon-html.svg';
+import cssIcon from '/assets/images/icon-css.svg';
+import jsIcon from '/assets/images/icon-js.svg';
+import accessibilityIcon from '/assets/images/icon-accessibility.svg';
 
 const router = useRouter();
 
