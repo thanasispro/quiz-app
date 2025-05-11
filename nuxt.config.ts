@@ -7,9 +7,6 @@ export default defineNuxtConfig({
     typeCheck: true
   },
   nitro: {
-    preset: 'node-server',
-    output: {
-      dir: './dist'
-    }
+    preset: 'vercel',
   }
 })
